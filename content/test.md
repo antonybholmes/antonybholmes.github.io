@@ -7,4 +7,4 @@ Slug: My-first-post
 Authors: Your name
 Summary: What does your post talk about? Write here.
 
-This is the *first post* from my Pelican blog.
+This is the *secondx* from my Pelican blog.
