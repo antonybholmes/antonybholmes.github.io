@@ -36,12 +36,22 @@ DEFAULT_PAGINATION = 10
 
 
 STATIC_PATHS = ['images', 'css']
+INDEX_SAVE_AS = 'blog/index.html'
+INDEX_URL = 'blog/'
+ARTICLE_URL = 'blog/posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+YEAR_ARCHIVE_SAVE_AS = 'blog/posts/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'blog/posts/{date:%Y}/{date:%m}/index.html'
+CATEGORY_URL = 'blog/category/{slug}/'
+CATEGORY_SAVE_AS = 'blog/category/{slug}/index.html'
+TAG_URL = 'blog/tag/{slug}/'
+TAG_SAVE_AS = 'blog/tag/{slug}/index.html'
 
-ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+
+
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
-YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
-MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
+
+
 
 OUTPUT_PATH = '.'
