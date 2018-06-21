@@ -1,1 +1,1 @@
-pelican content -s pelicanconf.py -t /home/antony/sites/pelican_themes/antonybholmes
+pelican content -s pelicanconf.py -t pelican-themes/antonybholmes
