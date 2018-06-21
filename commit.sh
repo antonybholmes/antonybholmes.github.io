@@ -1,4 +1,4 @@
 pelican content
-git add --all .
+git add -A .
 git commit -m "Bug fixes and updates."
 git push -u origin master
