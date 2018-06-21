@@ -1,9 +1,8 @@
 Title: About
-Date: 2017-11-26 10:01
-Modified: 2017-11-27 12:30
+Date: 2019-06-21
 Category: misc
-Tags: first, misc
-Slug: My-first-post
+Tags: about
+Slug: about
 Authors: Antony B Holmes
 Summary: What does your post talk about? Write here.
 
