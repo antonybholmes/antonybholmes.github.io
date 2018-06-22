@@ -21,6 +21,12 @@ body {
 .section-label {
   font-weight: 600; 
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.sidebar-label {
+  font-weight: 600; 
+  text-transform: uppercase;
   text-align: right;
 }
 
