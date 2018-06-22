@@ -19,6 +19,7 @@ for line in f:
   
   if matcher is not None:
     title = matcher.group(1)
+    title = re.sub(r'\.', '', title)
     
   matcher = re.search(r'journal.+\= \{(.+)\}', line)
   
