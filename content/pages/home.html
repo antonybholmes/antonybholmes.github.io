@@ -36,6 +36,8 @@
         </div>
       </div>
     {% include 'pages/templates/home-section-end.html' %}
+    
+    {% include 'pages/templates/home-section-spacer.html' %}
 
     {% include 'pages/templates/home-section-start.html' %}
       <div class="row">
@@ -59,10 +61,14 @@
       </div>
     {% include 'pages/templates/home-section-end.html' %}
     
+    {% include 'pages/templates/home-section-spacer.html' %}
+    
     {% with name = 'Expertise' %}
     {% include 'pages/templates/home-section-start.html' %}
     {% endwith %}
     {% include 'pages/templates/home-section-end.html' %}
+    
+    {% include 'pages/templates/home-section-spacer.html' %}
     
     {% with name = 'Skills' %}
     {% include 'pages/templates/home-section-start.html' %}
@@ -75,12 +81,15 @@
       </div>
     {% include 'pages/templates/home-section-end.html' %}
 
+    {% include 'pages/templates/home-section-spacer.html' %}
     
     {% with name = 'Publications' %}
     {% include 'pages/templates/home-section-start.html' %}
     {% endwith %}
     {% include 'pages/templates/resume/publications.html' %}
     {% include 'pages/templates/home-section-end.html' %}
+    
+    {% include 'pages/templates/home-section-spacer.html' %}
     
     {% include 'pages/templates/home-section-start.html' %}
       <div style="text-align: center; margin-bottom: 50px">
