@@ -137,7 +137,10 @@ h1 {
 }
 
 .email {
+  color : #999;
   text-decoration : none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
 }
 
 .email:link, .email:visited, .email:active {
@@ -147,7 +150,8 @@ h1 {
 
 .email:hover {
   color : #999;
-  text-decoration : underline;
+  text-decoration : none;
+  border-color: #999;
 }
 
 
