@@ -4,6 +4,6 @@ Category: misc
 Tags: about
 Slug: about
 Authors: Antony B Holmes
-Summary: What does your post talk about? Write here.
+Summary: What does your post talk about Write here.
 
 About

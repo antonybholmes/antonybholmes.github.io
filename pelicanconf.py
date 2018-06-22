@@ -55,3 +55,8 @@ PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
 
 OUTPUT_PATH = '.'
+
+
+#JINJA2CONTENT_TEMPLATES = ['content',]
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['jinja2content']
