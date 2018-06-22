@@ -46,7 +46,7 @@ for line in f:
     print('<div class="pub-article">')
     
     if url != '':
-      print('  <div class="pub-title"><a class="pub-title-link" href="{}">{}</a></div>'.format(url, title))
+      print('  <div class="pub-title"><a class="pub-title-link" target="_blank" href="{}">{}</a></div>'.format(url, title))
     else:
       print('  <div class="pub-title">{}</div>'.format(title))
       

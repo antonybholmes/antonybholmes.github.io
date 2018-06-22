@@ -226,6 +226,21 @@ h1 {
 }
 
 .pub-journal {
-  font-size: 0.9em;
-  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.pub-title-link {
+  color : #666;
+	text-decoration : none;
+  transition: color 0.3s ease-in-out;
+}
+
+.pub-title-link:link, .email:visited, .email:active {
+	color : #666;
+	text-decoration : none;
+}
+
+.pub-title-link:hover {
+	color : rgba(100, 149, 237, 0.8);
+	text-decoration : none;
 }
