@@ -4,13 +4,13 @@ html {
 }
 
 body {
-	background-color : #fff;
+  background-color : #fff;
   color: #666;
-	padding : 0;
-	margin : 0;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	font-size : 14pt;
+  padding : 0;
+  margin : 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size : 14pt;
 }
 
 .sidebar {
@@ -65,12 +65,12 @@ p {
 }
 
 .logo {
-	height: 48px;
+  height: 48px;
 }
 
 h1 {
-	font-weight: 600;
-	font-size : 15pt;
+  font-weight: 600;
+  font-size : 15pt;
 }
 
 .headshot {
@@ -83,73 +83,73 @@ h1 {
 }
 
 .review {
-	position : relative;
-	padding-top : 5px;
+  position : relative;
+  padding-top : 5px;
 }
 
 .review_quote {
-	
+  
 }
 
 .review_source {
-	font-weight : 400;
-	padding-bottom : 20px;
+  font-weight : 400;
+  padding-bottom : 20px;
 }
 
 
 .production {
-	position : relative;
-	padding-top : 5px;
+  position : relative;
+  padding-top : 5px;
 }
 
 .production_block {
-	background-color : #fff;
-	position : relative;
-	padding : 5px;
+  background-color : #fff;
+  position : relative;
+  padding : 5px;
 }
 
 .heading {
-	font-size : 15pt;
-	font-weight: 400;
+  font-size : 15pt;
+  font-weight: 400;
   text-transform : uppercase;
 }
 
 .production_title {
-	text-transform : uppercase;
-	padding-top : 30px;
+  text-transform : uppercase;
+  padding-top : 30px;
 }
 
 .production_location {
-	
+  
 }
 
 .production_part {
-	font-weight : 400;
+  font-weight : 400;
 }
 
 .caption_title {
-	font-weight : bold;
+  font-weight : bold;
 }
 
 
 
 .copyright {
-	color : #999;
+  color : #999;
   font-size: 0.9em;
 }
 
 .email {
-	text-decoration : none;
+  text-decoration : none;
 }
 
 .email:link, .email:visited, .email:active {
-	color : #999;
-	text-decoration : none;
+  color : #999;
+  text-decoration : none;
 }
 
 .email:hover {
-	color : #999;
-	text-decoration : underline;
+  color : #999;
+  text-decoration : underline;
 }
 
 
@@ -237,16 +237,16 @@ h1 {
 
 .pub-title-link {
   color : #666;
-	text-decoration : none;
+  text-decoration : none;
   transition: color 0.3s ease-in-out;
 }
 
 .pub-title-link:link, .email:visited, .email:active {
-	color : #666;
-	text-decoration : none;
+  color : #666;
+  text-decoration : none;
 }
 
 .pub-title-link:hover {
-	color : rgba(100, 149, 237, 0.8);
-	text-decoration : none;
+  color : rgba(100, 149, 237, 0.8);
+  text-decoration : none;
 }
