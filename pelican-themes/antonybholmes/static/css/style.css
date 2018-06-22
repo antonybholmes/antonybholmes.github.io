@@ -1,0 +1,166 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	background-color : #fff;
+  color: #888;
+	padding : 0px;
+	margin : 0px;
+  padding-top: 100px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size : 14pt;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  line-height: 2;
+  padding-bottom: 30px;
+}
+
+.fixed-top {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.nav-item {
+  margin-left: 10px;
+  letter-spacing: 4px;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.active {
+  font-weight: 400;
+}
+
+.logo {
+	height: 48px;
+}
+
+h1 {
+	font-weight: 600;
+	font-size : 15pt;
+}
+
+.headshot {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.carousel-image {
+  height: 500px;
+}
+
+.review {
+	position : relative;
+	padding-top : 5px;
+}
+
+.review_quote {
+	
+}
+
+.review_source {
+	font-weight : 400;
+	padding-bottom : 20px;
+}
+
+
+.production {
+	position : relative;
+	padding-top : 5px;
+}
+
+.production_block {
+	background-color : #fff;
+	position : relative;
+	padding : 5px;
+}
+
+.heading {
+	font-size : 15pt;
+	font-weight: 400;
+  text-transform : uppercase;
+}
+
+.production_title {
+	text-transform : uppercase;
+	padding-top : 30px;
+}
+
+.production_location {
+	
+}
+
+.production_part {
+	font-weight : 400;
+}
+
+.caption_title {
+	font-weight : bold;
+}
+
+
+
+.copyright {
+	color : #999;
+  font-size: 12pt;
+}
+
+.email {
+	text-decoration : none;
+}
+
+.email:link, .email:visited, .email:active {
+	color : #999;
+	text-decoration : none;
+}
+
+.email:hover {
+	color : #999;
+	text-decoration : underline;
+}
+
+
+.progress-container {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 1px;
+  background: #aaa;
+  width: 0%;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.address-title {
+  font-weight: 700;
+}
+
+.address {
+  margin-top: 20px;
+}
