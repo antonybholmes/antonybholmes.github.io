@@ -54,8 +54,8 @@ PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
 
-PAGE_EXCLUDES = ['pages/templates']
-ARTICLE_EXCLUDES = ['pages/templates']
+PAGE_EXCLUDES = ['templates']
+ARTICLE_EXCLUDES = ['templates']
 
 
 OUTPUT_PATH = '.'

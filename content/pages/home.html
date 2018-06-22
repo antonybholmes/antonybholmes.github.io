@@ -19,7 +19,7 @@
       <meta name="save_as" content="index.html" />
   </head>
   <body>
-    {% include 'pages/templates/home-heading-section-start.html' %}
+    {% include 'templates/home-heading-section-start.html' %}
       <div class="row">
         <div class="col-sm-12">
           <div style="font-weight: 300; font-size: 48pt; letter-spacing: 8px;">antony b</div>
@@ -35,11 +35,11 @@
           <div style="font-weight: 300; margin-top: 20px; font-size: 2em;">Data Scientist</div>
         </div>
       </div>
-    {% include 'pages/templates/home-section-end.html' %}
+    {% include 'templates/home-section-end.html' %}
     
-    {% include 'pages/templates/home-section-spacer.html' %}
+    {% include 'templates/home-section-spacer.html' %}
 
-    {% include 'pages/templates/home-section-start.html' %}
+    {% include 'templates/home-section-start.html' %}
       <div class="row">
         <div class="col-sm-3">
           <div class="address-title">Location</div>
@@ -59,19 +59,19 @@
           <div class="address">antony@antonyholmes.com</div>
         </div>
       </div>
-    {% include 'pages/templates/home-section-end.html' %}
+    {% include 'templates/home-section-end.html' %}
     
-    {% include 'pages/templates/home-section-spacer.html' %}
+    {% include 'templates/home-section-spacer.html' %}
     
     {% with name = 'Expertise' %}
-    {% include 'pages/templates/home-section-start.html' %}
+    {% include 'templates/home-section-start.html' %}
     {% endwith %}
-    {% include 'pages/templates/home-section-end.html' %}
+    {% include 'templates/home-section-end.html' %}
     
-    {% include 'pages/templates/home-section-spacer.html' %}
+    {% include 'templates/home-section-spacer.html' %}
     
     {% with name = 'Skills' %}
-    {% include 'pages/templates/home-section-start.html' %}
+    {% include 'templates/home-section-start.html' %}
     {% endwith %}
       <div class="row">
         {{ skill('Java', 90) }}
@@ -79,22 +79,22 @@
         {{ skill('Python', 80) }}
         {{ skill('R', 60) }}
       </div>
-    {% include 'pages/templates/home-section-end.html' %}
+    {% include 'templates/home-section-end.html' %}
 
-    {% include 'pages/templates/home-section-spacer.html' %}
+    {% include 'templates/home-section-spacer.html' %}
     
     {% with name = 'Publications' %}
-    {% include 'pages/templates/home-section-start.html' %}
+    {% include 'templates/home-section-start.html' %}
     {% endwith %}
-    {% include 'pages/templates/resume/publications.html' %}
-    {% include 'pages/templates/home-section-end.html' %}
+    {% include 'templates/resume/publications.html' %}
+    {% include 'templates/home-section-end.html' %}
     
-    {% include 'pages/templates/home-section-spacer.html' %}
+    {% include 'templates/home-section-spacer.html' %}
     
-    {% include 'pages/templates/home-section-start.html' %}
+    {% include 'templates/home-section-start.html' %}
       <div style="text-align: center; margin-bottom: 50px">
         <div class="copyright">&copy; 2018 <a class="email" href="mailto:antony@antonyholmes.com">Antony B Holmes</a></div>
       </div>
-    {% include 'pages/templates/home-section-end.html' %}
+    {% include 'templates/home-section-end.html' %}
   </body>
 </html>
