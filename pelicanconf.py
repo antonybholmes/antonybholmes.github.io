@@ -34,6 +34,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+LOAD_CONTENT_CACHE = False
 
 STATIC_PATHS = ['images', 'css']
 INDEX_SAVE_AS = 'blog/index.html'
@@ -52,6 +53,9 @@ TAG_SAVE_AS = 'blog/tag/{slug}/index.html'
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
+
+PAGE_EXCLUDES = ['pages/templates']
+ARTICLE_EXCLUDES = ['pages/templates']
 
 
 OUTPUT_PATH = '.'
