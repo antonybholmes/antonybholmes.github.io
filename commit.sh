@@ -1,4 +1,4 @@
 ./publish.sh
 git add -A .
-git commit -m "Bug fixes and updates."
+git commit -m "Updates and bug fixes."
 git push -u origin master
