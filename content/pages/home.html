@@ -86,7 +86,14 @@
     {% include 'templates/home-section-end.html' %}
 
     {% include 'templates/home-section-spacer.html' %}
+    {% with name = 'Work Experience' %}
+    {% include 'templates/home-section-start.html' %}
+    {% endwith %}
+    {% include 'templates/work.html' %}
+    {% include 'templates/home-section-end.html' %}
     
+    
+    {% include 'templates/home-section-spacer.html' %}
     {% with name = 'Publications' %}
     {% include 'templates/home-section-start.html' %}
     {% endwith %}
