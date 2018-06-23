@@ -192,8 +192,8 @@
     </div>
     
     <div class="col-sm-9">
-      <div class="container-fluid"><div style="text-align: center;">
-  <div class="collapsible fa fa-chevron-circle-down" style="cursor: pointer; font-size:32px; color:rgba(100, 149, 237, 0.8);"></div>
+      <div class="container-fluid"><div style="text-align: center; padding: 5px;">
+  <div class="collapsible fa fa-chevron-circle-down" style="cursor: pointer; font-size:32px; color:rgba(100, 149, 237, 0.5);"></div>
 </div>
 <div class="publications collapsible-content">
 <div class="collapsible-fade"></div>
@@ -350,6 +350,11 @@
       var coll = document.getElementsByClassName("collapsible");
  
       coll[0].addEventListener("click", function() {
+        var button = document.getElementsByClassName("collapsible")[0];
+        
+        button.classList.toggle("fa-chevron-circle-down");
+        button.classList.toggle("fa-chevron-circle-up");
+        
         var content = document.getElementsByClassName("collapsible-content")[0];
         
         if (content.style.maxHeight) {
