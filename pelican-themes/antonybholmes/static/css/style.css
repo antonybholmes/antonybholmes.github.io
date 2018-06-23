@@ -267,13 +267,7 @@ h1 {
   color: rgba(100, 149, 237, 0.5);
   cursor: pointer; 
   font-size: 24px;
-  width: 24px;
-  height: 24px;
-  padding: 2px;
-  border: solid 2px rgba(100, 149, 237, 0.5);
-  border-radius: 50%;
   transition: color 0.3s ease-in-out;
-  vertical-align: middle;
 }
 
 .collapsible:hover {
