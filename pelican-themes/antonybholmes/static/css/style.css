@@ -264,15 +264,20 @@ h1 {
 
 
 .collapsible {
-    
+  color: rgba(100, 149, 237, 0.5);
+  transition: color 0.3s ease-in-out;
+}
+
+.collapsible:hover {
+  color:rgba(100, 149, 237, 0.8);
 }
 
 .collapsible-content {
-    padding: 0;
-    max-height: 200px;
-    overflow: hidden;
-    transition: max-height 1s ease-in-out;
-    position: relative;
+  padding: 0;
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+  position: relative;
 }
 
 .collapsible-fade {
