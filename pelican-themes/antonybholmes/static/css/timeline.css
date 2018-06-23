@@ -33,6 +33,7 @@
     background-color: rgba(100, 149, 237, 1);
     border: solid 3px white;
     top: 50%;
+    margin-top: -12px;
     border-radius: 50%;
     z-index: 1;
 }
