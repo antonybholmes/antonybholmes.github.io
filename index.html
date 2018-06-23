@@ -192,7 +192,9 @@
     </div>
     
     <div class="col-sm-9">
-      <div class="container-fluid"><div class="collapsible">Collapse</div>
+      <div class="container-fluid"><div style="text-align: center;">
+  <div class="collapsible fa fa-chevron-circle-down" style="font-size:48px;color:red"></div>
+</div>
 <div class="publications collapsible-content">
 <div class="collapsible-fade"></div>
 <div class="pub-article">
@@ -353,7 +355,7 @@
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
         } else {
-          content.style.maxHeight = content.scrollHeight + "px";
+          content.style.maxHeight = (content.scrollHeight + 50) + "px";
         } 
       });
     </script>
