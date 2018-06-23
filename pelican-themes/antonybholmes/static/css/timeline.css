@@ -83,7 +83,8 @@
 /* The actual content */
 .timeline-content {
     padding: 20px 30px;
-    background-color: rgba(100, 149, 237, 0.8);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     border-radius: 6px;
 }
