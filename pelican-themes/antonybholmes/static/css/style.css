@@ -255,3 +255,21 @@ h1 {
   color : rgba(100, 149, 237, 0.8);
   text-decoration : none;
 }
+
+
+
+
+
+
+
+
+.collapsible {
+    
+}
+
+.collapsible-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}

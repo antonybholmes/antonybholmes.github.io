@@ -100,5 +100,20 @@
         <div class="copyright">&copy; 2018 <a class="email" href="mailto:antony@antonyholmes.com">Antony B Holmes</a></div>
       </div>
     {% include 'templates/home-section-end.html' %}
+    
+    
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+ 
+      coll[0].addEventListener("click", function() {
+        var content = document.getElementsByClassName("collapsible-content")[0];
+        
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    </script>
   </body>
 </html>

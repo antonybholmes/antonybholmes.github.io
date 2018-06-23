@@ -192,7 +192,7 @@
     </div>
     
     <div class="col-sm-9">
-      <div class="container-fluid"><div class="publications">
+      <div class="container-fluid"><div class="publications collapsible-content">
 <div class="pub-article">
   <div class="pub-title">ChIP-suite: open source tools for integrative ChIP-seq data analysis</div>
   <div class="pub-authors"><span style="font-weight: 700;">Holmes, A. B.</span> and Dalla-Favera, Riccardo and Basso, Katia</div>
@@ -340,7 +340,22 @@
       </div>
     </div>
   </div>
-</div>  
+</div>    
+    
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+ 
+      coll[0].addEventListener("click", function() {
+        var content = document.getElementsByClassName("collapsible-content")[0];
+        
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    </script>
+  
 
 
 </body>
