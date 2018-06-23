@@ -14,7 +14,6 @@ body {
 }
 
 .sidebar {
-  text-align: right; 
   background-color: rgb(250, 250, 250); 
 }
 
@@ -202,6 +201,11 @@ h1 {
   height: 5px;
   color: white;
   background-color: rgba(100, 149, 237, 0.8);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.skill:hover {
+  background-color: rgba(100, 149, 237, 1);
 }
 
 .skill-90 {

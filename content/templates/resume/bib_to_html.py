@@ -52,7 +52,7 @@ for line in f:
       print('  <div class="pub-title">{}</div>'.format(title))
       
     print(authors)
-    print('  <div class="pub-journal">{}. {}</div>'.format(journal, year))
+    print('  <div class="pub-journal">{}. {}.</div>'.format(journal, year))
     
     print('</div>')
     
