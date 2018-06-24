@@ -68,7 +68,14 @@
         {{ pill('MySQL', 70) }}
       </div>
       <div class="row skill-row">
+        {{ pill('Apache Tomcat', 70) }}
+        {{ pill('Shell scripting', 70) }}
+        {{ pill('MATLAB', 50) }}
+      </div>
+      <div class="row skill-row">
         {{ pill('Spring', 60) }}
+        {{ pill('HTML/CSS', 70) }}
+        {{ pill('Javascript', 60) }}
       </div>
     {% include 'templates/home-section-end.html' %}
     
@@ -78,14 +85,29 @@
     {% include 'templates/work.html' %}
     {% include 'templates/home-section-end.html' %}
     
-    % with name = 'Education' %}
+    {% with name = 'Education' %}
     {% include 'templates/home-alt-section-start.html' %}
     {% endwith %}
     
-    <div class="edu-title">PhD Mathematical Biology</div>
-    <div class="edu-institute">University of Warwick, UK</div>
-    <div class="edu-grad">2009</div>
-    <div class="edu-description">Understanding morphogenesis in myxobacteria from a theoretical and experimental perspective.</div>
+    <div class="edu">
+      <div class="edu-title">Ph.D in Mathematical Biology</div>
+      <div class="edu-institute">University of Warwick, UK</div>
+      <div class="edu-grad">2009</div>
+      <div class="edu-description">Understanding morphogenesis in myxobacteria from a theoretical and experimental perspective.</div>
+    </div>
+    
+    <div class="edu">
+      <div class="edu-title">M.Sc in Computer Science</div>
+      <div class="edu-institute">University of Warwick, UK</div>
+      <div class="edu-grad">2005</div>
+    </div>
+    
+    <div class="edu">
+      <div class="edu-title">B.Sc in Computer Science</div>
+      <div class="edu-institute">University of Warwick, UK</div>
+      <div class="edu-grad">2004</div>
+    </div>
+    
     
     {% include 'templates/home-section-end.html' %}
     
@@ -98,8 +120,19 @@
     
 
     <div class="container-fluid section">
-      <div style="text-align: center; margin-bottom: 50px">
-        <div class="copyright">&copy; 2018 <a class="email" href="mailto:antony@antonyholmes.com">Antony B Holmes</a></div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+          <div class="copyright">&copy; 2018 <a class="email" href="mailto:antony@antonyholmes.com">Antony B Holmes</a></div>
+        </div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-2">
+          <div class="address">+1 (347) 688 5690</div>
+          <div class="address"><a class="email" href="https://antonyholmes.com" target="_blank">antonyholmes.com</a></div>
+          <div class="address"><a class="email" href="https://linkedin.com/in/antonybholmes" target="_blank">linkedin.com/in/antonybholmes</a></div>
+          <div class="address"><a class="email" href="https://github.com/antonybholmes" target="_blank">github.com/antonybholmes</a></div>
+        </div>
+        <div class="col-sm-2"></div>
       </div>
     </div>
     

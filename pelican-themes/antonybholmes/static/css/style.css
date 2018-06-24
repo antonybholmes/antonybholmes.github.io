@@ -272,6 +272,10 @@ h1 {
   width: 60%; 
 }
 
+.skill-50 {
+  width: 50%; 
+}
+
 .pub-article {
   margin-bottom: 30px;
 }
@@ -390,13 +394,26 @@ h1 {
   font-size: 0.8em;
 }
 
+.edu {
+  margin-bottom: 50px;
+}
+
 .edu-title {
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 1.1em;
+  letter-spacing: 0.1em;
 }
 
 .edu-institute {
   color: rgba(100, 149, 237, 0.8);
   font-weight: 700;
+}
+
+.edu-grad {
+  font-weight: 700;
+}
+
+.edu-description {
   
 }
