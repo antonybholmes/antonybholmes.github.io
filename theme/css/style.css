@@ -5,24 +5,19 @@ html {
 
 body {
   background-color : #fff;
-  color: #666;
+  color: #4d4d4d;
   padding : 0;
   margin : 0;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size : 14pt;
-  letter-spacing: 0.1em;
 }
 
 .sidebar {
   background-color: rgb(250, 250, 250); 
 }
 
-.section-label {
-  font-weight: 600; 
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
+
 
 .sidebar-label {
   font-weight: 600; 
@@ -136,6 +131,31 @@ h1 {
   font-size: 0.9em;
 }
 
+
+
+.title-email {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration : none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.title-email:link, .title-email:visited, .title-email:active {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.title-email:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+
 .email {
   color : #999;
   text-decoration : none;
@@ -197,15 +217,42 @@ h1 {
 
 .skill {
   text-align: right;
-  padding-right: 20px;
   line-height: 5px;
   height: 5px;
   color: white;
-  background-color: rgba(100, 149, 237, 0.8);
+  background-color: #aaa;
   transition: background-color 0.3s ease-in-out;
 }
 
 .skill:hover {
+  background-color: rgba(100, 149, 237, 1);
+}
+
+.skill-row {
+  margin-bottom: 30px;
+}
+
+.pill-container {
+  width: 100%;
+  height: 36px;
+  border-radius: 36px;
+  background-color: #ddd;
+}
+
+.pill {
+  border-radius: 36px;
+  color: white;
+  height: 36px;
+  line-height: 36px;
+  background-color: #bbb;
+  vertical-align: middle;
+  padding-left: 20px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.pill:hover {
   background-color: rgba(100, 149, 237, 1);
 }
 
@@ -267,7 +314,7 @@ h1 {
 .collapsible {
   color: rgba(100, 149, 237, 0.5);
   cursor: pointer; 
-  font-size: 24px;
+  font-size: 32px;
   transition: color 0.3s ease-in-out;
 }
 
@@ -289,4 +336,56 @@ h1 {
   height: 50px;
   width: 100%;
   background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  text-align: center; 
+}
+
+.alt-collapsible-fade {
+  background: linear-gradient(to bottom, rgba(250,250,250,0), rgba(250,250,250,1));
+}
+
+
+.bg { 
+    /* The image used */
+    background-image: url("../../images/antony_holmes_header_bw.jpg");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.section-label {
+  font-weight: 600; 
+  margin-bottom: 20px;
+  margin-right: 20px;
+  color: rgb(150, 150, 150); 
+  letter-spacing: 0.2em;
+  font-size: 1.1em;
+  text-align: right;
+}
+
+.section {
+  padding: 100px;
+  margin: 0;
+}
+
+.alt-section {
+  background-color: rgb(250, 250, 250);
+}
+
+.work-dates {
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.work-location {
+  margin-top: 20px;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.work-description {
+  font-size: 0.8em;
 }
