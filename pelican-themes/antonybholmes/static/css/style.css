@@ -8,9 +8,9 @@ body {
   color: #4d4d4d;
   padding : 0;
   margin : 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  font-size : 14pt;
+  font-size : 100%;
 }
 
 .sidebar {
@@ -151,7 +151,8 @@ h1 {
 .address {
   color : #999;
   margin-top: 10px;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  vertical-align: middle;
 }
 
 
@@ -248,7 +249,8 @@ h1 {
   line-height: 36px;
   background-color: #bbb;
   vertical-align: middle;
-  padding-left: 20px;
+  text-align: right;
+  padding-right: 20px;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
   font-size: 0.9em;
@@ -398,12 +400,12 @@ h1 {
 
 .work-location {
   margin-top: 20px;
-  font-size: 0.8em;
-  font-weight: 700;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 
 .work-description {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .edu {
@@ -412,18 +414,18 @@ h1 {
 
 .edu-title {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.1em;
   letter-spacing: 0.1em;
 }
 
 .edu-institute {
   color: rgba(100, 149, 237, 0.8);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .edu-grad {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .edu-description {

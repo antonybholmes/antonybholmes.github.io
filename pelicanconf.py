@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Antony B Holmes'
-SITENAME = u'Antony B Holmes'
-SITEURL = '' #'/antonybholmes'
+AUTHOR = 'Antony B Holmes'
+SITENAME = 'Antony B Holmes'
+SITEURL = '/antonybholmes'
 
 PATH = 'content'
 
