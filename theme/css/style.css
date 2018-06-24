@@ -234,6 +234,7 @@ h1 {
   height: 36px;
   border-radius: 36px;
   background-color: #ddd;
+  position: relative;
 }
 
 @media screen and (max-width: 600px) {
@@ -254,9 +255,32 @@ h1 {
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
   font-size: 0.9em;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .pill:hover {
+  background-color: rgba(100, 149, 237, 1);
+}
+
+.pill-label {
+  border-radius: 36px;
+  color: white;
+  height: 36px;
+  line-height: 36px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pill-label:hover {
   background-color: rgba(100, 149, 237, 1);
 }
 

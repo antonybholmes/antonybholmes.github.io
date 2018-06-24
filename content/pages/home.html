@@ -10,7 +10,8 @@
 {% macro pill(name='java', p=90) -%}
   <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-{{ p }}">{{ name }}</div>
+        <div class="pill skill-{{ p }}"></div>
+        <div class="pill-label skill-{{ p }}">{{ name }}</div>
     </div>
   </div>
 {%- endmacro %}
@@ -54,30 +55,28 @@
       </div>
     {% include 'templates/home-section-end.html' %}
     
-    {% with name = 'Skills' %}
+    {% with name = 'Skills', id = 'skills' %}
     {% include 'templates/home-alt-section-start.html' %}
-    {% endwith %}
-      <div id="skills">
-        <div class="row skill-row">
-          {{ pill('Java', 90) }}
-          {{ pill('C++', 70) }}
-          {{ pill('Python', 80) }}
-        </div>
-        <div class="row skill-row">
-          {{ pill('R', 70) }}
-          {{ pill('Postgresql', 70) }}
-          {{ pill('MySQL', 70) }}
-        </div>
-        <div class="row skill-row">
-          {{ pill('Apache Tomcat', 70) }}
-          {{ pill('Shell scripting', 70) }}
-          {{ pill('MATLAB', 50) }}
-        </div>
-        <div class="row skill-row">
-          {{ pill('Spring', 60) }}
-          {{ pill('HTML/CSS', 70) }}
-          {{ pill('Javascript', 60) }}
-        </div>
+    {% endwith %} 
+      <div class="row skill-row">
+        {{ pill('Java', 90) }}
+        {{ pill('C++', 70) }}
+        {{ pill('Python', 80) }}
+      </div>
+      <div class="row skill-row">
+        {{ pill('R', 70) }}
+        {{ pill('Postgresql', 70) }}
+        {{ pill('MySQL', 70) }}
+      </div>
+      <div class="row skill-row">
+        {{ pill('Apache Tomcat', 70) }}
+        {{ pill('Shell scripting', 70) }}
+        {{ pill('MATLAB', 50) }}
+      </div>
+      <div class="row skill-row">
+        {{ pill('Spring', 60) }}
+        {{ pill('HTML/CSS', 70) }}
+        {{ pill('Javascript', 60) }}
       </div>
     {% include 'templates/home-section-end.html' %}
     

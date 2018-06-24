@@ -1,4 +1,9 @@
-<div class="container-fluid section">
+{% if name %}
+  <div class="container-fluid section" id="{{ id }}">
+{% else %}
+  <div class="container-fluid section">
+{% endif %}
+
   <div class="row">
     <div class="col-sm-2">
       {% if name %}
