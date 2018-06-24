@@ -389,3 +389,14 @@ h1 {
 .work-description {
   font-size: 0.8em;
 }
+
+.edu-title {
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.edu-institute {
+  color: rgba(100, 149, 237, 0.8);
+  font-weight: 700;
+  
+}
