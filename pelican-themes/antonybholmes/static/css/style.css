@@ -379,6 +379,10 @@ h1 {
   .section {
     padding: 20px;
   }
+  
+  .section-label {
+    text-align: left;
+  }
 }
 
 .alt-section {
