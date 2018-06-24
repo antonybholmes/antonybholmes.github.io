@@ -237,6 +237,7 @@ h1 {
   height: 36px;
   border-radius: 36px;
   background-color: #ddd;
+  padding-bottom: 10px;
 }
 
 .pill {
@@ -372,6 +373,12 @@ h1 {
 .section {
   padding: 100px;
   margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    padding: 20px;
+  }
 }
 
 .alt-section {
