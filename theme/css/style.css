@@ -152,16 +152,16 @@ h1 {
   color : #999;
   margin-top: 10px;
   font-size: 0.9em;
-  vertical-align: middle;
+  position: relative;
 }
 
 .address-right {
-  text-align: right;
+  float: right;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .address-right {
-    text-align: left;
+    float: left;
   }
 }
 
@@ -262,12 +262,9 @@ h1 {
   vertical-align: middle;
   text-align: right;
   padding-right: 20px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
   cursor: pointer;
   font-size: 0.9em;
-  top: 0;
-  left: 0;
-  position: absolute;
 }
 
 .pill:hover {
@@ -284,9 +281,6 @@ h1 {
   padding-right: 20px;
   cursor: pointer;
   font-size: 0.9em;
-  position: absolute;
-  top: 0;
-  left: 0;
   transition: background-color 0.3s ease-in-out;
 }
 

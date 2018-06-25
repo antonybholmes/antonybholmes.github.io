@@ -30,6 +30,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
   
@@ -97,80 +101,68 @@
       <div class="row skill-row">
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-90"></div>
-        <div class="pill-label skill-90">Java</div>
+      <div class="pill skill-90">Java</div>
     </div>
   </div>
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-70"></div>
-        <div class="pill-label skill-70">C++</div>
+      <div class="pill skill-70">C++</div>
     </div>
   </div>
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-80"></div>
-        <div class="pill-label skill-80">Python</div>
+      <div class="pill skill-80">Python</div>
     </div>
   </div>
       </div>
       <div class="row skill-row">
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-70"></div>
-        <div class="pill-label skill-70">R</div>
+      <div class="pill skill-70">R</div>
     </div>
   </div>
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-70"></div>
-        <div class="pill-label skill-70">Postgresql</div>
+      <div class="pill skill-70">Postgresql</div>
     </div>
   </div>
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-70"></div>
-        <div class="pill-label skill-70">MySQL</div>
+      <div class="pill skill-70">MySQL</div>
     </div>
   </div>
       </div>
       <div class="row skill-row">
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-70"></div>
-        <div class="pill-label skill-70">Apache Tomcat</div>
+      <div class="pill skill-70">Apache Tomcat</div>
     </div>
   </div>
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-70"></div>
-        <div class="pill-label skill-70">Shell scripting</div>
+      <div class="pill skill-70">Shell scripting</div>
     </div>
   </div>
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-50"></div>
-        <div class="pill-label skill-50">MATLAB</div>
+      <div class="pill skill-50">MATLAB</div>
     </div>
   </div>
       </div>
       <div class="row skill-row">
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-60"></div>
-        <div class="pill-label skill-60">Spring</div>
+      <div class="pill skill-60">Spring</div>
     </div>
   </div>
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-70"></div>
-        <div class="pill-label skill-70">HTML/CSS</div>
+      <div class="pill skill-70">HTML/CSS</div>
     </div>
   </div>
         <div class="col-sm-3">
     <div class="pill-container">
-        <div class="pill skill-60"></div>
-        <div class="pill-label skill-60">Javascript</div>
+      <div class="pill skill-60">Javascript</div>
     </div>
   </div>
       </div>
@@ -418,16 +410,16 @@
     <div class="container-fluid section">
       <div class="row">
         <div class="col-sm-2"></div>
-        <div class="col-sm-10">
+        <div class="col-sm-8">
+          <div class="address-right">
             <div class="address"><a class="email" href="mailto:antony@antonyholmes.com">antony@antonyholmes.com</a></div>
             <div class="address"><a class="email" href="tel:1-347-688-5690">+1 (347) 688 5690</a></div>
             <div class="address"><a class="email" href="https://linkedin.com/in/antonybholmes" target="_blank">linkedin.com/in/antonybholmes</a></div>
             <div class="address"><a class="email" href="https://github.com/antonybholmes" target="_blank">github.com/antonybholmes</a></div>
+            <div class="address">&copy; 2018 <a class="email" href="mailto:antony@antonyholmes.com">Antony Holmes</a></div>
+          </div>
         </div>
         <div class="col-sm-2"></div>
-        <div class="col-sm-10">
-          <div class="address">&copy; 2018 <a class="email" href="mailto:antony@antonyholmes.com">Antony Holmes</a></div>
-        </div>
       </div>
     </div>
     
@@ -454,22 +446,35 @@
       $('#skills').one("mouseover", function() {
           var t1 = $(this);
           
-          //$('.pill-label').css('opacity', 0);
-          
           t1.find('.pill-container').each(function() {
             var t2 = $(this);
             
-            t2.find('.pill-label').css('opacity', 0);
+            var pw = t2.css('width');
             
             t2.find('.pill').each(function() {
               var t3 = $(this);
               
               var w = t3.css('width');
-              t3.width(0);
+              
+              // Make text invisible
+              t3.css('color', 'rgba(255, 255, 255, 0)');
+              
+              //console.log('w ' + w +  " " + parseInt(w, 10) + " " + parseInt(pw, 10));
+              
+              // Convert widths to percentage
+              var p = Math.round((parseInt(w, 10) / parseInt(pw, 10)) * 100);
+              
+              // Set to 0 so we can animate expansion
+              t3.css('width', 0);
             
               t3.animate({width: w}, 2000, 'swing', function() {
-                // Fade in the skill labels
-                t2.find('.pill-label').fadeTo(1000, 1, 'swing');
+                //console.log(p);
+                
+                // Set width as a percentage in case we want to
+                // resize window
+                t3.css('width', p + '%');
+                
+                t3.animate({color: 'rgba(255, 255, 255, 1)'}, 1000);
               });
             });
           });
