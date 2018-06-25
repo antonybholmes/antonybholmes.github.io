@@ -156,12 +156,12 @@ h1 {
 }
 
 .address-right {
-  float: right;
+  text-align: right;
 }
 
 @media screen and (max-width: 600px) {
   .address-right {
-    float: left;
+    text-align: left;
   }
 }
 
