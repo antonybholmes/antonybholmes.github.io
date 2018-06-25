@@ -155,6 +155,16 @@ h1 {
   vertical-align: middle;
 }
 
+.address-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+  .address-right {
+    text-align: left;
+  }
+}
+
 
 .email {
   color : #999;
