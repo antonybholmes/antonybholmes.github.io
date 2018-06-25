@@ -159,7 +159,7 @@ h1 {
   text-align: right;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .address-right {
     text-align: left;
   }
