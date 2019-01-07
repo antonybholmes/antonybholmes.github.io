@@ -1,0 +1,204 @@
+
+
+
+<html>
+  <head>
+      <title>Home</title>
+      <meta name="tags" content="home, antony" />
+      <meta name="date" content="2018-06-22" />
+      <meta name="category" content="home" />
+      <meta name="authors" content="Antony B Holmes" />
+      <meta name="summary" content="Antony Holmes homepage" />
+      <meta name="save_as" content="index.html" />
+  </head>
+  
+  <body>
+        <style>
+          .footer-link {
+          color: #fff;
+          text-decoration: none;
+          border-bottom: 1px solid transparent;
+          transition: border-bottom 0.3s ease-in-out;
+        }
+
+        .footer-link:link, .footer-link:visited, .footer-link:active {
+          color: white;
+          text-decoration: none;
+        }
+
+        .footer-link:hover {
+          color: white;
+          text-decoration: none;
+          border-color: white;
+        }
+      </style>
+    
+    
+    <div class="container-fluid bg" style="position: relative; padding: 0; margin: 0; height: 400px; text-align: center; vertical-align: middle;">
+      <div style="position: relative; top: 50%; transform: translateY(-50%);">
+        <div style="font-family: 'Cormorant Garamond'; font-size: 3.5em; letter-spacing: 0.5em; color: rgba(255, 255, 255, 0.8);">ANTONY HOLMES</div>
+        <div style="font-weight: 300; font-size: 1.5em; letter-spacing: 0.25em; color: rgba(255, 255, 255, 0.8); margin-top: 1em;">Data Scientist</div>
+        <div style="font-weight: 300; font-size: 1em; letter-spacing: 0.25em; color: rgba(255, 255, 255, 0.8); margin-top: 1em;">New York</div>
+        <!-- <div style="font-weight: 300; margin-top: 100px;"><a class="title-email" href="mailto:antony@antonyholmes.com">antony@antonyholmes.com</a></div> -->
+      </div>
+    </div>
+    
+    
+    <!--
+    {% include 'templates/home-section-start.html' %}
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="address-title">Location</div>
+          <div class="address">New York</div>
+        </div>
+        <div class="col-sm-3">
+          <div class="address-title">Phone</div>
+          <div class="address">+1 (347) 688 5690</div>
+        </div>
+        <div class="col-sm-3">
+          <div class="address-title">Web</div>
+          <div class="address"><a class="email" href="https://antonyholmes.com" target="_blank">antonyholmes.com</a></div>
+          <div class="address"><a class="email" href="https://linkedin.com/in/antonybholmes" target="_blank">linkedin.com/in/antonybholmes</a></div>
+          <div class="address"><a class="email" href="https://github.com/antonybholmes" target="_blank">github.com/antonybholmes</a></div>
+        </div>
+      </div>
+    {% include 'templates/home-section-end.html' %}
+    -->
+    
+    {% with name = 'Skills', id = 'skills' %}
+    {% include 'templates/home-section-start.html' %}
+    {% endwith %} 
+    
+    {% include 'templates/skills.html' %}
+      
+    {% include 'templates/home-section-end.html' %}
+    
+    
+    {% with name = 'Social Media' %}
+    {% include 'templates/home-alt-section-start.html' %}
+    {% endwith %}
+    
+    {% include 'templates/social-media.html' %}
+    
+    {% include 'templates/home-section-end.html' %}
+
+    
+    {% with name = 'Employment' %}
+    {% include 'templates/home-section-start.html' %}
+    {% endwith %}
+    
+    {% include 'templates/work.html' %}
+    {% include 'templates/home-section-end.html' %}
+    
+    {% with name = 'Education' %}
+    {% include 'templates/home-alt-section-start.html' %}
+    {% endwith %}
+    
+    <div class="edu">
+      <div class="edu-title">Ph.D in Mathematical Biology</div>
+      <div class="edu-institute">University of Warwick, UK</div>
+      <div class="edu-grad">2009</div>
+      <div class="edu-description"><span style="font-style: italic">Understanding morphogenesis in myxobacteria from a theoretical and experimental perspective</span></div>
+    </div>
+    
+    <div class="edu">
+      <div class="edu-title">M.Sc in Computer Science</div>
+      <div class="edu-institute">University of Warwick, UK</div>
+      <div class="edu-grad">2005</div>
+    </div>
+    
+    <div class="edu">
+      <div class="edu-title">B.Sc in Computer Science</div>
+      <div class="edu-institute">University of Warwick, UK</div>
+      <div class="edu-grad">2004</div>
+      <div class="edu-description">First-class honours</div>
+    </div>
+    
+    
+    {% include 'templates/home-section-end.html' %}
+    
+    {% with name = 'Publications' %}
+    {% include 'templates/home-section-start.html' %}
+    {% endwith %}
+    {% include 'templates/resume/publications.html' %}
+    {% include 'templates/home-section-end.html' %}
+    
+    {% include 'templates/home-footer.html' %}
+  
+    
+    
+    <script>
+      function togglePub() {
+        var button = document.getElementsByClassName("collapsible")[0];
+        
+        button.classList.toggle("fa-angle-double-down");
+        button.classList.toggle("fa-angle-double-up");
+        
+        var content = document.getElementsByClassName("collapsible-content")[0];
+        
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = (content.scrollHeight + 50) + "px";
+        } 
+      }
+      
+      var coll = document.getElementsByClassName("collapsible");
+ 
+      coll[0].addEventListener("click", togglePub);
+      
+      // Open
+      togglePub();
+      
+      // Animate pills when user first hovers mouse over them.
+      $('#skills').one("mouseover", function() {
+          var t1 = $(this);
+          
+          t1.find('.pill-container').each(function() {
+            var t2 = $(this);
+            
+            var pw = t2.css('width');
+            
+            t2.find('.pill').each(function() {
+              var t3 = $(this);
+              
+              var w = t3.css('width');
+              
+              // Make text invisible
+              t3.css('color', 'rgba(255, 255, 255, 0)');
+              
+              //console.log('w ' + w +  " " + parseInt(w, 10) + " " + parseInt(pw, 10));
+              
+              // Convert widths to percentage
+              var p = Math.round((parseInt(w, 10) / parseInt(pw, 10)) * 100);
+              
+              // Set to 0 so we can animate expansion
+              t3.css('width', 0);
+            
+              t3.animate({width: w}, 2000, 'swing', function() {
+                //console.log(p);
+                
+                // Set width as a percentage in case we want to
+                // resize window
+                t3.css('width', p + '%');
+                
+                t3.animate({color: 'rgba(255, 255, 255, 1)'}, 1000);
+              });
+            });
+          });
+        }
+      );
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </script>
+  </body>
+</html>

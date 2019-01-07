@@ -1,0 +1,28 @@
+.skill-box {
+  border-left: solid 4px rgba(200, 200, 200, 0);
+  transition: border-left 2s ease-in-out;
+}
+
+.skill-box:hover {
+  border-left: solid 4px rgba(200, 200, 200, 1);
+}
+
+.circular-skill {
+    width: 80px;
+    height: 80px;
+    background: none;
+}
+
+.circular-skill-meter,
+.circular-skill-value {
+    fill: none;
+}
+
+.circular-skill-meter {
+    stroke: #e6e6e6;
+}
+
+.circular-skill-value {
+    stroke: #87aade;
+    stroke-linecap: round;
+}

@@ -1,0 +1,159 @@
+{% macro skill(name='java', p=90) -%}
+  <div class="col-sm-4">
+    <div style="font-weight: 700; color: rgba(100, 149, 237, 0.9); font-size: 0.9em;">{{ name }}</div>
+    <div class="skill-container">
+        <div class="skill skill-{{ p }}"></div>
+    </div>
+  </div>
+{%- endmacro %}
+
+{% macro pill(name='java', p=90) -%}
+  <div class="col-sm-3">
+    <div class="pill-container">
+      <div class="pill skill-{{ p }}">{{ name }}</div>
+    </div>
+  </div>
+{%- endmacro %}
+
+<!--
+<div class="row skill-row">
+{{ pill('Java', 90) }}
+{{ pill('C++', 70) }}
+{{ pill('Python', 80) }}
+</div>
+<div class="row skill-row">
+{{ pill('R', 70) }}
+{{ pill('Postgresql', 80) }}
+{{ pill('MySQL', 70) }}
+</div>
+<div class="row skill-row">
+{{ pill('Apache Tomcat', 70) }}
+{{ pill('Shell scripting', 80) }}
+{{ pill('MATLAB', 50) }}
+</div>
+<div class="row skill-row">
+{{ pill('Spring', 60) }}
+{{ pill('HTML/CSS', 70) }}
+{{ pill('Javascript', 60) }}
+</div>
+-->
+
+<script>
+
+    var RADIUS = 32;
+    var CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+
+    function circularSkill(name, value) {
+        var skill = $('#' + name)
+        
+        var p = value / 100.0;
+    
+        // We need a correction beacause the stroke-dashoffset does not position
+        // the arc quite correctly.
+        var dashoffset = CIRCUMFERENCE * (1 - p);
+        
+        console.log('circular-skill:', p + '%', '|', 'offset:', dashoffset)
+        
+        skill.css({'stroke-dasharray': CIRCUMFERENCE, 'stroke-dashoffset': dashoffset});
+    }
+</script>
+
+{% macro circular_skill(name='skill', id='skill-1', p=75) -%}
+    <div class="col-sm-5 skill-box">
+        <div style="float: left;">
+            <svg class="circular-skill" viewBox="0 0 80 80">
+                <circle class="circular-skill-meter" cx="40" cy="40" r="32" stroke-width="8" />
+                <circle class="circular-skill-value" cx="40" cy="40" r="32" stroke-width="8" transform="rotate(-90 40 40)" id="{{ id }}" />
+                <text style="font-size: 16pt;" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">{{ (p / 10)|round(0, 'ceil')|int }}</text> 
+            </svg>
+        </div>
+        <div style="float: left; margin-left: 20px;">
+            <div style="font-size: 14pt; font-weight: 600;">{{ name }}</div>
+            <div>
+{%- endmacro %}            
+            
+{% macro circular_skill_end(id='skill-1', p=75) -%}  
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        circularSkill('{{ id }}', {{ p }});
+    </script>
+{%- endmacro %}
+
+<div id="circular-skills">
+    <div class="row skill-row">
+        {{ circular_skill('Java', 'java', 90) }}
+        Tomcat, Spring Boot, Eclipse, Maven
+        {{ circular_skill_end('java', 90) }}
+        
+        {{ circular_skill('Python', 'python', 80) }}
+        Django, Pandas, Matplotlib, Seaborn
+        {{ circular_skill_end('python', 80) }}
+    </div>
+
+    <div class="row skill-row">
+        {{ circular_skill('C++', 'cpp', 70) }}
+        STL, Boost
+        {{ circular_skill_end('cpp', 70) }}
+        
+        {{ circular_skill('Mathematical', 'mathematical', 70) }}
+        R, MATLAB
+        {{ circular_skill_end('mathematical', 70) }}
+    </div>
+    
+    <div class="row skill-row">
+        {{ circular_skill('Databases', 'databases', 80) }}
+        Postgresql, MySQL
+        {{ circular_skill_end('databases', 80) }}
+        
+        {{ circular_skill('HTML/CSS', 'html', 70) }}
+        Bootstrap
+        {{ circular_skill_end('html', 70) }}
+    </div>
+    
+    <div class="row skill-row">
+        {{ circular_skill('Javascript', 'javascript', 50) }}
+        JQuery
+        {{ circular_skill_end('javascript', 50) }}
+
+        {{ circular_skill('Amazon Web Services', 'aws', 70) }}
+        EC2, S3, RDS
+        {{ circular_skill_end('aws', 70) }}
+     </div>
+    
+    <div class="row skill-row">   
+        {{ circular_skill('Scripting', 'scripting', 80) }}
+        BASH
+        {{ circular_skill_end('scripting', 80) }}
+    </div>
+</div>
+
+
+
+
+<script>
+    $('#circular-skills').one("mouseover", function() {
+        t1 = $(this);
+      
+        t1.find('.circular-skill').each(function() {
+            // Find each circular-skill circle
+            var t2 = $(this);
+            
+            t2.find('.circular-skill-value').each(function() {
+                // In each circular-skill circle, find the level arc
+                // and animate it
+                var t3 = $(this);
+              
+                var w = parseFloat(t3.css('stroke-dashoffset'));
+              
+                //var p = w / CIRCUMFERENCE;
+              
+                t3.css('stroke-dashoffset', CIRCUMFERENCE);
+            
+                t3.animate({strokeDashoffset: w}, 2000, 'swing');
+            });
+        });
+    });
+</script>
