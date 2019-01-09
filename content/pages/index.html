@@ -7,8 +7,8 @@
       <meta name="tags" content="home, antony" />
       <meta name="date" content="2018-06-22" />
       <meta name="category" content="home" />
-      <meta name="authors" content="Antony B Holmes" />
-      <meta name="summary" content="Antony Holmes homepage" />
+      <meta name="authors" content="Antony Holmes" />
+      <meta name="summary" content="Antony Holmes" />
       <meta name="save_as" content="index.html" />
   </head>
   
@@ -81,17 +81,25 @@
     {% include 'templates/social-media.html' %}
     
     {% include 'templates/home-section-end.html' %}
+    
+    {% with name = 'Volunteer Work' %}
+    {% include 'templates/home-section-start.html' %}
+    {% endwith %}
+    
+    {% include 'templates/volunteer.html' %}
+    
+    {% include 'templates/home-section-end.html' %}
 
     
     {% with name = 'Employment' %}
-    {% include 'templates/home-section-start.html' %}
+    {% include 'templates/home-alt-section-start.html' %}
     {% endwith %}
     
     {% include 'templates/work.html' %}
     {% include 'templates/home-section-end.html' %}
     
     {% with name = 'Education' %}
-    {% include 'templates/home-alt-section-start.html' %}
+    {% include 'templates/home-section-start.html' %}
     {% endwith %}
     
     <div class="edu">
@@ -118,7 +126,7 @@
     {% include 'templates/home-section-end.html' %}
     
     {% with name = 'Publications' %}
-    {% include 'templates/home-section-start.html' %}
+    {% include 'templates/home-alt-section-start.html' %}
     {% endwith %}
     {% include 'templates/resume/publications.html' %}
     {% include 'templates/home-section-end.html' %}
