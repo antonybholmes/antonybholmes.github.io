@@ -61,20 +61,20 @@
     
     {% include 'templates/home-section-end.html' %}
     
-    {% with name = 'Volunteer Work' %}
+    {% with name = 'Employment' %}
     {% include 'templates/home-section-start.html' %}
+    {% endwith %}
+    
+    {% include 'templates/work.html' %}
+    
+    {% include 'templates/home-section-end.html' %}
+    
+    {% with name = 'Volunteer Work' %}
+    {% include 'templates/home-alt-section-start.html' %}
     {% endwith %}
     
     {% include 'templates/volunteer.html' %}
     
-    {% include 'templates/home-section-end.html' %}
-
-    
-    {% with name = 'Employment' %}
-    {% include 'templates/home-alt-section-start.html' %}
-    {% endwith %}
-    
-    {% include 'templates/work.html' %}
     {% include 'templates/home-section-end.html' %}
     
     {% with name = 'Education' %}
