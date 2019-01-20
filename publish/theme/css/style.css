@@ -422,10 +422,11 @@ ul {
   letter-spacing: 0.2em;
   font-size: 1.1em;
   text-align: right;
+  text-transform: uppercase;
 }
 
 .section {
-  padding: 100px;
+  padding: 50px;
   margin: 0;
 }
 

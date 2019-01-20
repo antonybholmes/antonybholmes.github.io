@@ -12,5 +12,10 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://www.antonyholmes.com/pages/index/</loc>
+    <priority>1.0</priority>
+  </url>
+
 
 </urlset>

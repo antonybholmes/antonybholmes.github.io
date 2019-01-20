@@ -4,20 +4,21 @@
 <html>
   <head>
       <title>Home</title>
-      <meta name="tags" content="home, antony" />
+      <meta name="tags" content="index, antony" />
       <meta name="date" content="2018-06-22" />
-      <meta name="category" content="home" />
+      <meta name="category" content="index" />
+      <meta name="slug" content="index" />
       <meta name="authors" content="Antony Holmes" />
       <meta name="summary" content="Antony Holmes" />
       <meta name="save_as" content="index.html" />
   </head>
   
   <body>
-    <div class="container-fluid bg" style="position: relative; padding: 0; margin: 0; height: 400px; text-align: center; vertical-align: middle;">
-      <div style="position: relative; top: 50%; transform: translateY(-50%);">
-        <div style="font-family: 'Cormorant Garamond'; font-size: 3.5em; letter-spacing: 0.5em; color: rgba(255, 255, 255, 0.8);">ANTONY HOLMES</div>
-        <div style="font-weight: 300; font-size: 1.5em; letter-spacing: 0.25em; color: rgba(255, 255, 255, 0.8); margin-top: 1em;">Data Scientist</div>
-        <div style="font-weight: 300; font-size: 1em; letter-spacing: 0.25em; color: rgba(255, 255, 255, 0.8); margin-top: 1em;">New York</div>
+    <div class="container-fluid" style="position: relative; padding: 50px; text-align: center; vertical-align: middle;">
+      <div>
+        <div style="font-family: 'Cormorant Garamond'; font-size: 3.5em; letter-spacing: 0.6em; text-transform: uppercase; color: rgb(32,32,32);">Antony Holmes</div>
+        <div style="font-weight: 300; font-size: 1.5em; letter-spacing: 0.25em; color: rgb(32,32,32);">Data Scientist</div>
+        <div style="font-weight: 300; font-size: 1em; letter-spacing: 0.25em; color: rgb(32,32,32); margin-top: 0.5em;">New York</div>
         <!-- <div style="font-weight: 300; margin-top: 100px;"><a class="title-email" href="mailto:antony@antonyholmes.com">antony@antonyholmes.com</a></div> -->
       </div>
     </div>
@@ -54,7 +55,7 @@
     
     
     {% with name = 'Social Media' %}
-    {% include 'templates/home-alt-section-start.html' %}
+    {% include 'templates/home-section-start.html' %}
     {% endwith %}
     
     {% include 'templates/social-media.html' %}
@@ -70,7 +71,7 @@
     {% include 'templates/home-section-end.html' %}
     
     {% with name = 'Volunteer Work' %}
-    {% include 'templates/home-alt-section-start.html' %}
+    {% include 'templates/home-section-start.html' %}
     {% endwith %}
     
     {% include 'templates/volunteer.html' %}
@@ -82,22 +83,22 @@
     {% endwith %}
     
     <div class="edu">
-      <div class="edu-title">Ph.D in Mathematical Biology</div>
+      <div class="edu-title">Ph.D Mathematical Biology</div>
       <div class="edu-institute">University of Warwick, UK</div>
       <div class="edu-grad">2009</div>
       <div class="edu-description"><span style="font-style: italic">Understanding morphogenesis in myxobacteria from a theoretical and experimental perspective</span></div>
     </div>
     
     <div class="edu">
-      <div class="edu-title">M.Sc in Computer Science</div>
+      <div class="edu-title">M.Sc Computer Science</div>
       <div class="edu-institute">University of Warwick, UK</div>
-      <div class="edu-grad">2005</div>
+      <!-- <div class="edu-grad">2005</div> -->
     </div>
     
     <div class="edu">
-      <div class="edu-title">B.Sc in Computer Science</div>
+      <div class="edu-title">B.Sc Computer Science</div>
       <div class="edu-institute">University of Warwick, UK</div>
-      <div class="edu-grad">2004</div>
+      <!-- <div class="edu-grad">2004</div> -->
       <div class="edu-description">First-class honours</div>
     </div>
     
@@ -105,10 +106,15 @@
     {% include 'templates/home-section-end.html' %}
     
     {% with name = 'Publications' %}
-    {% include 'templates/home-alt-section-start.html' %}
+    {% include 'templates/home-section-start.html' %}
     {% endwith %}
     {% include 'templates/resume/publications.html' %}
     {% include 'templates/home-section-end.html' %}
+    
+    <div style="text-align: center; vertical-align: middle; position: relative;">
+        
+    </div>
+    
     
     {% include 'templates/home-footer.html' %}
   
