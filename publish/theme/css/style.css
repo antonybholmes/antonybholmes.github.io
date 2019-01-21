@@ -430,6 +430,13 @@ ul {
   margin: 0;
 }
 
+.heading-name {
+    font-family: 'Cormorant Garamond'; 
+    font-size: 4em; letter-spacing: 0.6em; 
+    text-transform: uppercase; 
+    color: rgb(32,32,32);
+}
+
 @media screen and (max-width: 600px) {
   .section {
     padding: 20px;
@@ -437,6 +444,10 @@ ul {
   
   .section-label {
     text-align: left;
+  }
+  
+  .heading-name {
+      font-size: 2em;
   }
 }
 
