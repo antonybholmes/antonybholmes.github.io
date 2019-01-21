@@ -431,8 +431,9 @@ ul {
 }
 
 .heading-name {
+    font-size: 4em; 
     font-family: 'Cormorant Garamond'; 
-    font-size: 4em; letter-spacing: 0.6em; 
+    letter-spacing: 0.6em; 
     text-transform: uppercase; 
     color: rgb(32,32,32);
 }
@@ -447,7 +448,11 @@ ul {
   }
   
   .heading-name {
-      font-size: 2em;
+    font-size: 2em;
+    font-family: 'Cormorant Garamond'; 
+    letter-spacing: 0.6em; 
+    text-transform: uppercase; 
+    color: rgb(32,32,32);
   }
 }
 
